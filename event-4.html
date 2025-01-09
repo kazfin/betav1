@@ -1,0 +1,23 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<h1 id="eventTitle4">Event</h1>
+<p id="eventText4">Event text.</p>
+<p id="eventOutcome4">Event outcome.</p><br>
+<div style="text-align: center;"><!--buttons-->
+<button class="hand-cursor" id="button1-4">Button 1</a></button><br><br>
+<button class="hand-cursor" id="button2-4">The second button</a></button><br><br>
+<button class="hand-cursor" id="button3-4">Button number three</a></button><br><br>
+<button class="hand-cursor" id="button4-4">Button the fourth</a></button><br><br>
+</div>
+<p id="eventCreditText4" style="position: absolute; left: 1%; top: 93.5%; font-size: 16px;"></p>
+<p id="moneyText7" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script>document.getElementById("moneyText7").innerHTML = "Money: $" + Money;</script><!--updates money text-->

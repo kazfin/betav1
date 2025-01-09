@@ -1,0 +1,11 @@
+VARIABLES
+if you want to add a variable, add them in /js/variableTextFixing.js. This is where all variables get initialised in the main game.
+
+CSS
+if you want to change the style/graphics, that's all located in the css folder. some pages may have different css files, so if you want to change the style of a specific page, open that page in a text/code editor, go to the top of the code, and find: "<link <link rel="stylesheet" href="css/THIS-IS-THE-FILE-YOU-NEED-TO-CHANGE.css">".
+
+TROUBLESHOOTING TIPS
+if you're changing some code that might effect the game in a major way, e.g. changing a variable, you might want to add a console.log() function to display in the browser console what changes you're making. to see what's stored in your local storage, you can also navigate to the Application tab up the top of the inspect window.
+
+OTHER
+you can open all HTML, CSS, and JavaScript files in any text editor if you want to.all other information will be contained via comments within the files themselves. if you have any questions email the creator of this version of BLS (in this case Ethan at badlifesimulator@gmail.com (change this to your contact if you're making a mod)). If you don't know how to code in HTML, CSS, or JavaScript, I recommend the app Mimo to learn it.

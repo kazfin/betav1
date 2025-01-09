@@ -1,0 +1,19 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Search pg 1 | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav-job.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<a href="./home.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<img src="assets/briefcase.svg" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<br><br><br>
+<img src="assets/jobs/int-designer.png" id="int-designer" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;">
+<p id="moneyText8" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<img src="assets/thispage.png" style="width: 15px; position: absolute; left: 50%; top: 85%; transform: translate(-50%, -50%);">
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/jobOpportunitySelect.js"></script><!--takes the player to the job application page they chose.-->
+<script>document.getElementById("moneyText8").innerHTML = "Money: $" + Money;</script><!--updates money text-->

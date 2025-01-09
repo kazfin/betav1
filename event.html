@@ -1,0 +1,22 @@
+<!--Author(s): Ethan Scott-->
+<!--the reason there are four event pages is that some events require more buttons than others. the number at the end of the page name is how many buttons the page has, so event-3.html has 3 buttons, event-2 has 2, and so on. event.html, which only has one button, is usually more helpful for -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<h1 id="eventTitle">Event</h1>
+<p id="eventText">Event text.</p>
+<p id="eventOutcome">Event outcome.</p><br><!--the event's change to the player's stats, e.g. Intellect + 25-->
+<div style="text-align: center;"><!--buttons-->
+<button class="hand-cursor" id="button1">OK</button><br><br>
+</div>
+<p id="eventCreditText1" style="position: absolute; left: 1%; top: 93.5%; font-size: 16px;"></p>
+<p id="moneyText4" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/event.js"></script><!--updates the page to display the event that has occurred-->
+<script>document.getElementById("moneyText4").innerHTML = "Money: $" + Money;</script><!--updates money text-->

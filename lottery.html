@@ -1,0 +1,28 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lottery | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/activities/fav-lottery.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<a href="./activities-pg1.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<img src="assets/coin.svg" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<h1>Lottery</h2>
+<p>Are you feeling lucky?</p>
+<div style="text-align: center;"><!--lottery buttons-->
+<br><br><br>
+<button class="hand-cursor" id="lotteryLowRisk">Low Risk Lottery</button>
+<button class="hand-cursor" id="lotteryMediumRisk">Medium Risk Lottery</button>
+<button class="hand-cursor" id="lotteryHighRisk">High Risk Lottery</button>
+</div>
+<br><br><br>
+<p>Low risk - 10% chance of winning - Cost: $50 - Prize: $400</p>
+<p>Medium risk - 1% chance of winning - Cost: $50 - Prize: $10,000</p>
+<p>High risk - 0.005% chance of winning - Cost: $50 - Prize: $5,000,000</p>
+<p id="moneyText3" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/lottery.js"></script><!--runs the script for the lottery.-->
+<script>document.getElementById("moneyText3").innerHTML = "Money: $" + Money;</script><!--updates money text-->
