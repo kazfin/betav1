@@ -1,0 +1,29 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Opportunity | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav-job.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<img id="left" class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;">
+<img src="assets/briefcase.svg" id="jobIcon" style="position: absolute; top: 5%; left: 97%; transform: translate(-50%, -50%); width: 50px;">
+<h1 id="jobOpportunityName">Job</h2>
+<h3><b>Qualifications:</b></h3>
+<p id="jobQualificationAge">Age requirement: 900</p>
+<p id="jobQualificationEducation">Education: 46 years studing the ancient Chinese art of Kung Fu</p>
+<p id="jobQualificationJobExp">Work experience: 200 months working for NASA</p>
+<br>
+<h3><b>Branches:</b></h3>
+<img src="assets/jobs/appr-int-designer.png" id="career-branch-1" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;"><br>
+<img src="assets/jobs/int-designer.png" id="career-branch-2" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;"><br>
+<img src="assets/jobs/sr-int-designer.png" id="career-branch-3" class="special-button" style="height: 40px; display: block; margin-left: auto; margin-right: auto;"><br>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<p id="jobQualificationPay">$4 a month</p>
+<img src="assets/thispage.png" style="width: 15px; position: absolute; left: 50%; top: 85%; transform: translate(-50%, -50%);">
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/activitiesjs/jobOpportunity.js"></script><!--sets text and images to the job they selected-->
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->
+<script>document.getElementById("left").addEventListener("click", function() { Job = ""; localStorage.setItem("Job", JSON.stringify(Job)); window.location.href = "./home.html"; })</script>

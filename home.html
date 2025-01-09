@@ -1,0 +1,39 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<h1>Bad Life Simulator</h1>
+<div><!--New life-->
+<a href="./confirm-new-game.html"><img src="assets/egg-cracked-full-used-rotated.png" class="img-rollover" style="width: 40px; z-index: 2; position: absolute; left: 1.5%; top: 4%; transform: translate(-50%, -50%);"></a>
+<img src="assets/egg-cracked.svg" style="width: 30px; z-index: 1; position: absolute; left: 1.5%; top: 4%; transform: translate(-50%, -50%);"><!--to pull off this image rollover effect, i only apply the img-rollover class to the image shown on top.-->
+</div>
+<div><!--achievement notifications-->
+<img src="assets/trophy.png" style="width: 30px; z-index: 1; position: absolute; left: 98%; top: 4%; transform: translate(-50%, -50%);">
+<a href="./achievements.html"><img src="assets/trophy-unread.png" id="trophy-unread" style="opacity: 0; width: 30px; z-index: 2; position: absolute; left: 98%; top: 4%; transform: translate(-50%, -50%);"></a>
+</div>
+<div><!--Variables & logs-->
+<p id="ageText">Age: 0</p>
+<p id="joyText">Joy: 0</p>
+<p id="healthText">Health: 0</p>
+<p id="intellectText">Intellect: 0</p>
+<p id="looksText">Looks: 0</p><br><br><br>
+<p id="logsText" style="width: 65%; margin-left: auto; margin-right: auto;">...</p>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--gets variables from local storage so they stay consistent across pages-->
+<script type = "text/javascript" src="./js/variableTextUpdater.js"></script>
+<script type = "text/javascript" src="./js/achievements/achChecker.js"></script>
+</div>
+<div><!--Buttons-->
+<a href="./career-redirect.html"><img src="./assets/briefcase.svg" id="briefcase" class="button" style="position: absolute; top: 80%; left: 35%; transform: translate(-50%, -50%); width: 50px;"></a>
+<a href="./age-up-preview.html"><img src="./assets/info.svg" class="button" style="position: absolute; top: 72.5%; left: -50%; transform: translate(-50%, -50%); width: 20px;"></a>
+<img src="./assets/plus.png" id="plus" class="button" style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%); width: 50px;">
+<a href="./activities-pg1.html"><img src="./assets/run.svg" id="run" class="button" style="position: absolute; top: 80%; left: 65%; transform: translate(-50%, -50%); width: 50px;"></a>
+</div>
+<script type = "text/javascript" src="./js/ageUp.js"></script><!--script to age up the player-->
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->

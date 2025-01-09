@@ -1,0 +1,1 @@
+This is the folder that stores the javascript for all of the game's achievements, as well as an achievement guide. The achievement guide is an excel spreadsheet, but if you don't have excel, the file can still be opened and edited online with google sheets by going to the home page and clicking on the folder icon to the top right of the spreadsheet list.

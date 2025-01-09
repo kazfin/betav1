@@ -1,0 +1,27 @@
+<!--Author(s): Ethan Scott-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job | Bad Life Simulator</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="assets/fav-job.png">
+<noscript>Get a browser that was made past the year 1997 (one that supports javascript) or you can't play ¯\_(ツ)_/¯</noscript>
+</head>
+<body>
+<a href="./home.html"><img class="button" src="assets/left.svg" style="top: 5%; left: 2%; transform: translate(-50%, -50%); width: 50px;"></a>
+<h1 id="jobTitle">Job career</h1>
+<p id="salaryText">Salary = $4.52/yr</p>
+<p id="performanceText">Performance = We fired you seven years ago</p>
+<br><br>
+<p id="crunchText" class="pseudolink">Perform a crunch day</p>
+<p id="unpaidOvertimeText" class="pseudolink">Volunteer for unpaid overtime</p>
+<p id="paidOvertimeText" class="pseudolink">Do some paid overtime</p>
+<p id="paidTimeOffText" class="pseudolink">Take PTO</p>
+<p id="raiseText" class="pseudolink">Ask for a raise</p>
+<br>
+<p id="quitText" class="pseudolink"><b>Quit</b></p>
+<p id="moneyText" style="position: absolute; left: 50%; top: 90%; transform: translate(-50%, -50%); font-size: 20px; color: green;">Money: $0</p>
+<script type = "text/javascript" src="./js/variableChecker.js"></script><!--finds variables so money and stats stay consistent across pages.-->
+<script type = "text/javascript" src="./js/jobPageText.js"></script><!--updates the rest of the text-->
+<script type = "text/javascript" src="./js/activitiesjs/job.js"></script>
+<script>document.getElementById("moneyText").innerHTML = "Money: $" + Money;</script><!--updates money text-->
