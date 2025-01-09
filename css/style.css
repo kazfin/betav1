@@ -1,0 +1,62 @@
+/*Author(s): Ethan Scott*/
+
+@font-face { font-family: font; src: url(fonts/font.otf); } /*copy and change this if you want to add an external font*/
+@font-face { font-family: Poppins; src: url(fonts/Poppins-Medium.ttf); }
+@font-face { font-family: Poppins-Bold; src: url(fonts/Poppins-Bold.ttf); }
+
+p, h2, h3, h4, button {
+	text-align: center;
+	font-family: Poppins;
+}
+
+h1 {
+	text-align: center;
+	font-family: Poppins-Bold;
+}
+
+.button {
+	position: absolute;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button:hover, .hand-cursor:hover{
+	cursor: pointer;
+}
+
+.special-button {
+	border-radius: 25px;
+	transition-duration: 0.5s;
+}
+
+.special-button:hover {
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.img-rollover {
+	opacity: 0;
+}
+
+.img-rollover:hover {
+	opacity: 1;
+}
+
+button {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.nolink {
+	text-decoration: none;
+	color: black;
+}
+
+.pseudolink {
+	color: blue;
+	text-decoration: underline;
+}
+
+.pseudolink:hover {
+	cursor: pointer;
+}
